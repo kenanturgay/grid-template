@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(150, 251, 72);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "myArea myArea myArea myArea myArea";
+  gap: 15px;
+  background-color: dodgerblue;
+  padding: 10px;
+}
+
+.grid-container > div {
+  color: #000;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.item1 {
+  grid-area: myArea;
+  background-color: rgb(255, 0, 0);
+}
+
+.item2 {
+  grid-area: 2 / 1 / 4 / 1;
+  background-color: rgb(0, 255, 0);
+}
+
+.item3 {
+  grid-area: 2 / 2 / 2 / 5;
+  background-color: rgb(11, 209, 235);
+}
+.item4 {
+  grid-area: 2 / 5 / 4 / 6;
+  background-color: rgb(255, 0, 255);
+}
+.item5 {
+  grid-area: 3 / 2 / 3 / 6;
+  background-color: rgb(255, 255, 0);
+}
